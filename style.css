@@ -1,44 +1,90 @@
 body{
   margin: 0;
+  padding: 0;
 }
  a {
    color:black;
    text-decoration: none;
+   padding: 0;
+   margin: 0;
    }
- h1{
-   font-size: 45px;
-   text-align: center;
-   border-bottom: 1px solid gray;
-   margin: 0px;
-   padding: 20px;
+ h2{
+   font-size: 40px;
+   margin: 0;
+   padding : 30px;
+ }
+ h3{
+   font-size: 20px;
  }
  ul{
-   border-right: 1px solid gray;
-   width: 100px;
+   height: 100%; overflow: hidden;
    margin: 0;
-   padding: 20px;
    list-style: none;
+ }
+ .line{
+   border-bottom: solid 1px #ffffff;
+   margin: 20px;
+ }
+ #top{
+   width: 100%;
+   height: auto;
+   text-align: center;
+   padding: 0;
+   margin:0;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: #bc32f9;
+ }
+ #top img{
+   width: 100%;
+   height: auto;
  }
  #grid{
    display: grid;
-   grid-template-columns: 150px 1fr;
+   grid-template-columns: 200px 1fr;
  }
- #grid ul{
-   padding-left: 30px;
+ #menu ul{
+   padding: 0px;
+   list-style: none;
+   background-color: #ffff4a;
+ }
+ #menu li{
+   height: auto;
+   padding: 15px;
+   text-align: center;
+ }
+ #menu li:hover{
+   font-weight: bold;
  }
  #grid #article{
-   padding-left: 25px;
+   color: #ffffff;
+   text-align: center;
+   height: 100%;
+   padding: 0 30px 0 30px;
+   margin-bottom: 30px;
+   background-color: black;
+ }
+ #button{
+   display: inline-block;
+   width: auto;
+   height: auto;
+   padding: 20px;
+   margin-top: 30px;
+   text-align: center;
+   background-color: #ffff4a;
+   font-weight: bold;
+ }
+ #button:hover{
+   background-color: #ff56ff;
  }
  @media(max-width:800px) {
    #grid{
      display: block;
+     height: auto;
+     width: auto;
    }
    ul{
      border-right: none;
-     width: 200px;
-     margin: 0;
-     padding: 20px;
-     list-style: none;
    }
    h1{
      border-bottom: none;
