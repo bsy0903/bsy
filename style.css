@@ -42,7 +42,7 @@ body{
  #grid{
    display: grid;
    grid-template-columns: 200px 1fr;
-   height: 1000px;
+   height: 100%;
  }
  #menu ul{
    padding: 0px;
@@ -77,11 +77,31 @@ body{
  #button:hover{
    background-color: #ff56ff;
  }
+#career{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: yellow;
+}
+
  @media(max-width:800px) {
    #grid{
      display: block;
      height: auto;
      width: auto;
+   }
+   #grid #article{
+     color: #ffffff;
+     text-align: center;
+     height: auto;
+     padding: 10px;
+     padding-bottom: 40px;
+     margin: 0;
+     background-color: black;
+   }
+   iframe{
+     width: 100%;
    }
    ul{
      border-right: none;
