@@ -27,8 +27,23 @@
     </ul>
     </div>
     <div id="article">
+      <input type="button" value="White" onclick="
+       document.querySelector('#article').style.backgroundColor = 'white';
+       document.querySelector('#article').style.color = 'black';
+       document.querySelector('#article #career').style.color = 'black';
+       document.querySelector('.line').style.borderColor = 'black';
+      ">
+      <input type="button" value="Black" onclick="
+       document.querySelector('#article').style.backgroundColor = 'black';
+       document.querySelector('#article').style.color = 'white';
+       document.querySelector('#article #career').style.color = 'yellow';
+       document.querySelector('.line').style.borderColor = 'white';
+      ">
       <h2>디지털인문예술을 소개합니다!</h2>
+      <div id="career">디지털인문예술이란...</div>
+      <p>디지털 기술의 비약적인 발전은 인문학의 근본적인 변화를 요구하는 동시에 인문학의 가능성을 획기적으로 증대시키고 있습니다. 디지털 기술은 또한 오랜 세월 동안 쌓인 인문학의 지적 자산과 미적 감각, 창의력을 절실하게 필요로 하고 있습니다. 여기에 디지털 기술과 인문학이 화학적으로 결합할 필요성이 있습니다. 디지털인문예술 융합전공은 디지털 문명과 기술에 대한 인문학적 성찰과 함께 문화와 예술에 대한 감각을 바탕으로 디지털 매체를 활용하여 새로운 것을 창조하는 능력을 함양시킬 것입니다.</p>
       <p>
+        <div class="line"></div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/AIeVPkNGp4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </p>
       <p style="font-size:12px;">
