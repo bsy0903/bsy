@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>BSY - 디인예 캐릭터</title>
+  <meta charset="utf-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XM5BF8WD86"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XM5BF8WD86');
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="top"><a href="index.html"><img src="main_title.png"></a></div>
+  <div id="grid">
+    <div id="menu">
+    <ul>
+      <li><a href="1.html">DAH이란?</a></li>
+      <div style="border-top:solid 1px gray"></div>
+      <li><a href="2.html">교육과정</a></li>
+      <div style="border-top:solid 1px gray"></div>
+      <li><a href="3.html">졸업 후 진로</a></li>
+      <div style="border-top:solid 1px gray"></div>
+      <li><a href="4.html">디인예 캐릭터</a></li>
+    </ul>
+    </div>
+    <div id="article">
+      <input type="button" value="White" onclick="
+       document.querySelector('#article').style.backgroundColor = 'white';
+       document.querySelector('#article').style.color = 'black';
+       document.querySelector('#article #career').style.color = 'black';
+       document.querySelector('.line').style.borderColor = 'black';
+      ">
+      <input type="button" value="Black" onclick="
+       document.querySelector('#article').style.backgroundColor = 'black';
+       document.querySelector('#article').style.color = 'white';
+       document.querySelector('#article #career').style.color = 'yellow';
+       document.querySelector('.line').style.borderColor = 'white';
+      ">
+      <h2>디인예 캐릭터</h2>
+        <p><iframe style="width:100%; height:600px;" src="캐릭터.pdf">
+        </iframe></p>
+    </div>
+  </div>
+</body>
+</html>
